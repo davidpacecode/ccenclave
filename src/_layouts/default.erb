@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="<%= site.locale %>">
+  <head>
+    <%= render "head", metadata: site.metadata, title: data.title %>
+    <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-beta.6/dist/styles/webawesome.css" />
+    <script type="module" src="https://early.webawesome.com/webawesome@3.0.0-beta.6/dist/webawesome.loader.js"></script>
+    <script src="https://kit.fontawesome.com/dc8a27351f.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="<%= data.layout %> <%= data.page_class %>">
+
+    <main>
+      <wa-page class="wa-system">
+        <header slot="header">
+          <div class="wa-cluster">
+            <i class="fa-duotone fa-thin fa-house-heart fa-2xl" style="--fa-primary-color: #63E6BE; --fa-secondary-color: #63E6BE;"></i>
+            <span class="wa-heading-m">Circle C Enclave</span>
+          </div>
+        </header>
+
+        <nav slot="navigation">
+          <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+        </nav>
+
+        <main>
+          <%= yield %>
+        </main>
+
+        <footer slot="footer">
+          <%= render "footer", metadata: site.metadata %>
+        </footer>
+
+      </wa-page>
+
+
+
+    </main>
+
+  </body>
+</html>
