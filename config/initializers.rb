@@ -21,6 +21,14 @@ Bridgetown.configure do |config|
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
 
+  collections do
+    faqs do
+      output true
+      permalink "pretty"
+      name "Frequently Asked Questions"
+    end
+  end
+  #
   # Other options you might want to investigate:
 
   # See list of timezone values here:
