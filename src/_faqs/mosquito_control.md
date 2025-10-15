@@ -1,5 +1,5 @@
 ---
-category: Landscaping, Mosquitos, and Home Care
+section: Landscaping, Mosquitos, and Home Care
 title: Mosquito Control
 sort_order: 22
 ---

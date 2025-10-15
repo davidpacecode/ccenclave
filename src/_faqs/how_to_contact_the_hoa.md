@@ -1,5 +1,5 @@
 ---
-category: Contact Information
+section: Contact Information
 title: How to contact the HOA
 sort_order: 11
 ---

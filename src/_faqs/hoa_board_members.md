@@ -1,5 +1,5 @@
 ---
-category: Contact Information
+section: Contact Information
 title: HOA Board Members
 sort_order: 12
 ---

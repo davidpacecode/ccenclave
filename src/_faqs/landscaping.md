@@ -1,5 +1,5 @@
 ---
-category: Landscaping, Mosquitos, and Home Care
+section: Landscaping, Mosquitos, and Home Care
 title: Landscaping (also known as "Jose's Number")
 sort_order: 21
 ---

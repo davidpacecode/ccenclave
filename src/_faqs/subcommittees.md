@@ -1,5 +1,5 @@
 ---
-category: Contact Information
+section: Contact Information
 title: Subcommittees
 sort_order: 13
 ---

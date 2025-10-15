@@ -1,0 +1,17 @@
+<div class="wa-stack">
+  <h3><%= section %></h3>
+  <% faqs.each do |faq| %>
+    <wa-details appearance="plain">
+      <h4 slot="summary" class="wa-heading-m" style="margin: 0"><%= faq.data.title %></h4>
+      <%= faq.content %>
+    </wa-details>
+    <wa-divider></wa-divider>
+  <% end %>
+ 
+
+   <p><%# markdownify faq.content %></p>
+
+
+
+
+
