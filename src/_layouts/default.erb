@@ -8,32 +8,30 @@
   </head>
   <body class="<%= data.layout %> <%= data.page_class %>">
 
-    <main>
-      <wa-page class="wa-system">
-        <header slot="header">
-          <div class="wa-cluster">
-            <a href="/"><i class="fa-duotone fa-thin fa-house-heart fa-2xl" style="--fa-primary-color: #63E6BE; --fa-secondary-color: #63E6BE;"></i></a>
-            <span class="wa-heading-xl">Circle C Enclave</span>
-          </div>
-        </header>
+    <wa-page class="wa-system">
+      <header slot="header">
+        <div class="wa-cluster">
+          <a href="/"><i class="fa-duotone fa-thin fa-house-heart fa-2xl" style="--fa-primary-color: #63E6BE; --fa-secondary-color: #63E6BE;"></i></a>
+          <span class="wa-heading-xl">Circle C Enclave</span>
+        </div>
+      </header>
 
-        <nav slot="navigation">
-          <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
-        </nav>
+      <nav slot="navigation">
+        <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+      </nav>
 
-        <main>
-          <%= yield %>
-        </main>
+      <main>
+        <%= yield %>
+      </main>
 
-        <footer slot="footer">
-          <%= render "footer", metadata: site.metadata %>
-        </footer>
+      <footer slot="footer">
+        <%= render "footer", metadata: site.metadata %>
+      </footer>
 
-      </wa-page>
-
+    </wa-page>
 
 
-    </main>
+
 
   </body>
 </html>

@@ -14,7 +14,7 @@ main {
   }
 }
 
- faq-section {
+.faq-section {
   border-radius: 16px;
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.2),
@@ -25,7 +25,7 @@ main {
 }
 
 @media (min-width: 768px) {
-  faq-section {
+  .faq-section {
     margin: 24px; /* desktop */
   }
 }
