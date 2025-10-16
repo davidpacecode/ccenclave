@@ -13,3 +13,19 @@ main {
     margin: 24px; /* desktop */
   }
 }
+
+ faq-section {
+  border-radius: 16px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    0 3px 8px rgba(0, 0, 0, 0.12);
+  padding: 32px;
+  background: white;
+  margin: 12px; /* mobile */
+}
+
+@media (min-width: 768px) {
+  faq-section {
+    margin: 24px; /* desktop */
+  }
+}
