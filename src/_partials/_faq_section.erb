@@ -5,7 +5,9 @@
       <h4 slot="summary" class="wa-heading-m" style="margin: 0"><%= faq.data.title %></h4>
       <%= markdownify faq.content %>
     </wa-details>
-    <wa-divider></wa-divider>
+    <% if faq != faqs.last %>
+      <wa-divider></wa-divider>
+    <% end %>
   <% end %>
 </div>
 
