@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Circle C HOA Updates - October 27, 2025"
+title:  "Circle C HOA Updates"
 date:   2025-10-27 16:00:00 -0500
 categories: updates
 ---
