@@ -27,9 +27,10 @@ layout: default
 <br />
 [This is the click through for a category](https://webawesome.com/docs/patterns/blog-news/post-list/)
 
-<% collections.around_circle_c_content { |accc| accc.data.sort_order }.group_by { |accc| accc.data.category }.each do |category, accc| %>
-  <%= accc.title %>
+<%= collections.around_circle_c_content.each do |accc| %>
+  <%= accc.data.title %>
   <%# render "faq_section", section: section, faqs: faqs %>
+  WEEEE!!!
   <br />
 <% end %>
 
