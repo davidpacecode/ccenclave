@@ -23,6 +23,8 @@ layout: default
  - Target (Store with Grocery)
  - Sam's Club (Grocery and more)
 
+[This is the HTML for the category groupings...this page](https://webawesome.com/docs/patterns/blog-news/category-list/)
+[This is the click through for a category](https://webawesome.com/docs/patterns/blog-news/post-list/)
 
 <div class="wa-stack wa-gap-2xl wa-align-items-center">
   <h2 class="wa-heading-xl">A neighborhood guide</h2>
