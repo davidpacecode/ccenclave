@@ -27,6 +27,11 @@ Bridgetown.configure do |config|
       permalink "pretty"
       name "Frequently Asked Questions"
     end
+    around_circle_c_content do
+      output true
+      permalink "pretty"
+      name "Around Circle C Content"
+    end
   end
   #
   # Other options you might want to investigate:

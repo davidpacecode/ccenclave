@@ -6,7 +6,7 @@ class Builders::Datehelpers < SiteBuilder
       DateHelpers.standardize_date(dt)
     end
     helper :display_date do |dt|
-      DateHelpers.standardize_date(dt).strftime('%A %e %B %Y')
+      DateHelpers.standardize_date(dt).strftime('%d-%b-%Y')
     end
   end
 end

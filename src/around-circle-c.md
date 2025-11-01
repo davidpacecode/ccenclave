@@ -27,6 +27,12 @@ layout: default
 <br />
 [This is the click through for a category](https://webawesome.com/docs/patterns/blog-news/post-list/)
 
+<% collections.around_circle_c_content { |accc| accc.data.sort_order }.group_by { |accc| accc.data.category }.each do |category, accc| %>
+  <%= accc.title %>
+  <%# render "faq_section", section: section, faqs: faqs %>
+  <br />
+<% end %>
+
 <div class="wa-stack wa-gap-2xl wa-align-items-center">
   <h2 class="wa-heading-xl">A neighborhood guide</h2>
   <div>
