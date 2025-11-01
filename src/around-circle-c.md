@@ -7,10 +7,10 @@ layout: default
 ## Around Circle C
 
 <div class="wa-stack wa-gap-2xl wa-align-items-center">
-  <h2 class="wa-heading-3xl">Discover the Latest in...</h2>
+  <h2 class="wa-heading-xl">A neighborhood guide</h2>
   <div>
     <div class="wa-split">
-      <h3 class="wa-heading-xl">Customer Service</h3>
+      <h3 class="wa-heading-xl">Parks and Recreation</h3>
       <a class="wa-cluster wa-gap-2xs" href="#"><span>View More</span> <wa-icon name="arrow-right"></wa-icon></a>
     </div>
     <wa-divider></wa-divider>
@@ -23,8 +23,8 @@ layout: default
             alt="Group of customer service reps working on computers in a shared office space"
           />
           <div class="wa-stack wa-gap-xs">
-            <span class="wa-caption-m">Articles</span>
-            <span class="wa-heading-l">Creating Memorable Customer Moments: The Secret Sauce to Loyalty</span>
+            <span class="wa-caption-m">Parks</span>
+            <span class="wa-heading-l">Some words about Circle C Park on Slaughter</span>
           </div>
         </wa-card>
       </a>
@@ -36,8 +36,8 @@ layout: default
             alt="A hand pinching a pin on string, making connections between data on a corkboard"
           />
           <div class="wa-stack wa-gap-xs">
-            <span class="wa-caption-m">Software & Systems</span>
-            <span class="wa-heading-l">Crafting a Seamless Customer Journey</span>
+            <span class="wa-caption-m">Leagues</span>
+            <span class="wa-heading-l">Something about Circle C Select Swim Team</span>
           </div>
         </wa-card>
       </a>
@@ -49,8 +49,8 @@ layout: default
             alt="A chess board with all pieces in starting position"
           />
           <div class="wa-stack wa-gap-xs">
-            <span class="wa-caption-m">Engagement</span>
-            <span class="wa-heading-l">Customer Delight vs. Satisfaction: What’s the Real Goal?</span>
+            <span class="wa-caption-m">Parks</span>
+            <span class="wa-heading-l">Something about the Circle C trail</span>
           </div>
         </wa-card>
       </a>
@@ -58,7 +58,7 @@ layout: default
   </div>
   <div>
     <div class="wa-split">
-      <h3 class="wa-heading-xl">Growth & Culture</h3>
+      <h3 class="wa-heading-xl">Dining</h3>
       <a class="wa-cluster wa-gap-2xs" href="#"><span>View More</span> <wa-icon name="arrow-right"></wa-icon></a>
     </div>
     <wa-divider></wa-divider>
