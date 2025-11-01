@@ -6,6 +6,24 @@ layout: default
 
 ## Around Circle C
 
+- Dining
+  - Tropical Smoothie
+  - Mangieri's
+  - Craiggo's
+- Parks and Trails
+  - Circle C Park on Slaughter (Park with Trails)
+  - Circle C Trail (Hiking Trail)
+  - Circle C Aquatic Center
+- Leagues
+  - Circle C Select Swim Team
+  - Circle C Seals
+  - Westlake Parkour
+- Shopping
+ - HEB (Grocery and more)
+ - Target (Store with Grocery)
+ - Sam's Club (Grocery and more)
+
+
 <div class="wa-stack wa-gap-2xl wa-align-items-center">
   <h2 class="wa-heading-xl">A neighborhood guide</h2>
   <div>
