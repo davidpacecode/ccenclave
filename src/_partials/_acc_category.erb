@@ -10,13 +10,16 @@
         <a href="<%= acc.data.url %>">
           <wa-card with-image style="height: 100">
             <img
-              width="100"
               slot="media"
               src="<%= acc.data.image %>"
               alt="Group of customer service reps working on computers in a shared office space"
             />
             <div class="wa-stack wa-gap-xs">
-              <span class="wa-caption-m"><%= acc.data.tags %></span>
+              <span class="wa-caption-m">
+                <% acc.data.tags.each do |t| %>
+                  <wa-badge variant="success" pill> <%= t %> </wa-badge>
+                <% end %>
+              </span>
               <span class="wa-heading-l"><%= acc.data.title %></span>
             </div>
           </wa-card>

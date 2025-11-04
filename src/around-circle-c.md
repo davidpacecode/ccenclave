@@ -30,11 +30,10 @@ layout: default
 <div class="wa-stack wa-gap-2xl wa-align-items-center">
   <h2 class="wa-heading-xl">A neighborhood guide</h2>
 
-<% collections.around_circle_c_content.sort_by { |accc| accc.data.category }
-  .group_by { |accc| accc.data.category }.each do |category, accc| %>
-  <%= render "acc_category", category: category, accc: accc %>
-  <br />
-<% end %>
-
+  <% collections.around_circle_c_content.sort_by { |accc| accc.data.category }
+    .group_by { |accc| accc.data.category }.each do |category, accc| %>
+    <%= render "acc_category", category: category, accc: accc %>
+    <br />
+  <% end %>
 </div>
 
