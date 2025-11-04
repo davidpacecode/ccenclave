@@ -1,18 +1,31 @@
 <div class="wa-stack faq-section">
-  <h3><%= category %></h3>
-  <% accc.each do |acc| %>
-    <wa-details appearance="plain">
-      <h4 slot="summary" class="wa-heading-m" style="margin: 0"><%= acc.data.title %></h4>
-      <%= markdownify acc.data.content %>
-    </wa-details>
-    <% if acc != accc.last %>
-      <wa-divider></wa-divider>
-    <% end %>
-  <% end %>
+  <div>
+    <div class="wa-split">
+      <h3 class="wa-heading-xl"><%= category %></h3>
+      <a class="wa-cluster wa-gap-2xs" href="#"><span>View More</span> <wa-icon name="arrow-right"></wa-icon></a>
+    </div>
+    <wa-divider></wa-divider>
+    <div class="wa-grid">
+      <% accc.sort_by { |acc| acc.data.title}.each do |acc| %>
+        <a href="<%= acc.data.url %>">
+          <wa-card with-image style="height: 100">
+            <img
+              width="100"
+              slot="media"
+              src="<%= acc.data.image %>"
+              alt="Group of customer service reps working on computers in a shared office space"
+            />
+            <div class="wa-stack wa-gap-xs">
+              <span class="wa-caption-m"><%= acc.data.tags %></span>
+              <span class="wa-heading-l"><%= acc.data.title %></span>
+            </div>
+          </wa-card>
+        </a>
+        <% if acc != accc.last %>
+          <wa-divider></wa-divider>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-
-
-
-
 
