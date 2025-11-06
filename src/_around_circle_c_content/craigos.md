@@ -1,4 +1,5 @@
 ---
+layout: page
 category: Dining
 title: CraigO's
 sort_order: 12

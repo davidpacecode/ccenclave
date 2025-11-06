@@ -1,4 +1,5 @@
 ---
+layout: page
 category: League
 title: Circle C Select Swim (CCSS) Team
 sort_order: 20

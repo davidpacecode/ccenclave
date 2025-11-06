@@ -7,7 +7,7 @@
     <wa-divider></wa-divider>
     <div class="wa-grid">
       <% accc.sort_by { |acc| acc.data.title}.each do |acc| %>
-        <a href="<%= acc.data.url %>">
+        <a href="<%= acc.relative_url %>">
           <wa-card with-image style="height: 100">
             <img
               slot="media"

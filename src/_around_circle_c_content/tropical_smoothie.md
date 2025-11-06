@@ -1,4 +1,5 @@
 ---
+layout: page
 category: Dining
 title: Tropical Smoothie
 sort_order: 10
