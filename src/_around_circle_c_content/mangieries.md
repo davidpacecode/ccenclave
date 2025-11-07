@@ -1,6 +1,6 @@
 ---
 layout: page
-category: Dining
+section: Dining
 title: Mangierie's
 sort_order: 11
 tags: dining casual takeout

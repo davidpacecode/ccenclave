@@ -24,12 +24,12 @@ Bridgetown.configure do |config|
   collections do
     faqs do
       output true
-      permalink "pretty"
+      permalink "simple"
       name "Frequently Asked Questions"
     end
     around_circle_c_content do
       output true
-      permalink "pretty"
+      permalink "simple"
       name "Around Circle C Content"
     end
   end

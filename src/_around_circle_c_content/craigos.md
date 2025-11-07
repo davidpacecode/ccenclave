@@ -1,6 +1,6 @@
 ---
 layout: page
-category: Dining
+section: Dining
 title: CraigO's
 sort_order: 12
 tags: dining casual takeout

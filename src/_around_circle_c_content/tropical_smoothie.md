@@ -1,6 +1,6 @@
 ---
 layout: page
-category: Dining
+section: Dining
 title: Tropical Smoothie
 sort_order: 10
 tags: dining casual takeout
