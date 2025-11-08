@@ -12,7 +12,7 @@
             <img
               slot="media"
               src="/<%= acc.data.image %>"
-              alt="Group of customer service reps working on computers in a shared office space"
+              alt="<%= acc.data.alt_text %>"
             />
             <div class="wa-stack wa-gap-xs">
               <span class="wa-caption-m">
@@ -24,7 +24,7 @@
             </div>
           </wa-card>
         </a>
-        <% if acc != accc.last %>
+        <% if acc == accc.last %>
           <wa-divider></wa-divider>
         <% end %>
       <% end %>
