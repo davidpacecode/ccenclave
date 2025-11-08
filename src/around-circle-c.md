@@ -6,10 +6,6 @@ layout: default
 
 ## Around Circle C
 
-- Dining
-  - Tropical Smoothie
-  - Mangieri's
-  - Craiggo's
 - Parks and Trails
   - Circle C Park on Slaughter (Park with Trails)
   - Circle C Trail (Hiking Trail)
@@ -19,9 +15,9 @@ layout: default
   - Circle C Seals
   - Westlake Parkour
 - Shopping
- - HEB (Grocery and more)
- - Target (Store with Grocery)
- - Sam's Club (Grocery and more)
+  - HEB (Grocery and more)
+  - Target (Store with Grocery)
+  - Sam's Club (Grocery and more)
 
 [This is the HTML for the section groupings...this page](https://webawesome.com/docs/patterns/blog-news/category-list/)
 <br />
