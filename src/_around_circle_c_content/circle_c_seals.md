@@ -1,9 +1,9 @@
 ---
 layout: page
-section: League
+section: Leagues
 title: Circle C Seals
 sort_order: 20
-tags: 
+tags: sports outdoors
 url: https://ccrseals.swimtopia.com/
 image: images/circle_c_seals.jpg
 alt_text: Circle C Seals

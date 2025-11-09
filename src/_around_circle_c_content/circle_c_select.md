@@ -1,9 +1,9 @@
 ---
 layout: page
-section: League
+section: Leagues
 title: Circle C Select Swim (CCSS) Team
 sort_order: 20
-tags: 
+tags: sports outdoors
 url: https://www.circlecselectswimteam.com/page/home
 image: images/circle_c_select.jpg
 alt_text: Circle C Select Swim (CCSS) Team
