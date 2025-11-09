@@ -5,7 +5,7 @@ title: Taco Deli
 sort_order: 12
 tags: dining casual takeout
 url: https://www.tacodeli.com/
-image: images/taco_deli.png
+image: images/taco_deli.jpg
 alt_text: Taco Deli
 ---
 

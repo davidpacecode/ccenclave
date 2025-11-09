@@ -6,7 +6,7 @@
     </div>
     <wa-divider></wa-divider>
     <div class="wa-grid">
-      <% accc.sort_by { |acc| acc.data.title}.each do |acc| %>
+      <% accc.take(3).sort_by { |acc| acc.data.title}.each do |acc| %>
         <a href="<%= acc.relative_url %>">
           <wa-card with-image style="height: 100%">
             <img
@@ -25,7 +25,7 @@
             </div>
           </wa-card>
         </a>
-        <% if acc == accc.last %>
+        <% if acc == accc[2] %>
           <wa-divider></wa-divider>
         <% end %>
       <% end %>
