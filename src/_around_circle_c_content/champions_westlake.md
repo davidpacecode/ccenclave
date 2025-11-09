@@ -9,5 +9,4 @@ image: images/champions_westlake.jpg
 alt_text: Champions Westlake
 ---
 
-Circle C Seals summer swim league.
-
+They teach parkour here
