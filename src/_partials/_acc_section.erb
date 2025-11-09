@@ -5,7 +5,7 @@
       <a class="wa-cluster wa-gap-2xs" href="#"><span>View More</span> <wa-icon name="arrow-right"></wa-icon></a>
     </div>
     <wa-divider></wa-divider>
-    <div class="wa-grid" style="--min-column-size: 300px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
       <% accc.take(3).sort_by { |acc| acc.data.title}.each do |acc| %>
         <a href="<%= acc.relative_url %>">
           <wa-card with-image style="height: 100%">
