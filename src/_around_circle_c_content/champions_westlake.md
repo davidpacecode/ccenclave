@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: around_circle_c_content
 section: Leagues
 title: Champions Westlake
+lead_in: Gymnastics, Parkour, and (probably?) more
 sort_order: 20
 tags: sports
 url: https://championswestlake.com/

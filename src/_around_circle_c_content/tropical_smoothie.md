@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: around_circle_c_content
 section: Dining
 title: Tropical Smoothie
+lead_in: Smoothies, wraps, and (probably?) more
 sort_order: 10
 tags: dining casual takeout
 url: https://locations.tropicalsmoothiecafe.com/tx/austin/9600-escarpment-boulevard?y_source=1_MjQ5MTcyNTctNzE1LWxvY2F0aW9uLndlYnNpdGU%3D

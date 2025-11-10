@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="wa-stack">
+  <h3 class="wa-heading-l"><%= data.title %></h3>
+  <p class="wa-caption-s"><%= data.lead_in %></p>
+  <wa-divider></wa-divider>
+  <dl class="wa-stack wa-gap-2xl">
+    <div class="wa-flank" style="--flank-size: 20ch;">
+      <dt>Full name</dt>
+      <dd>Bucky Barnes</dd>
+    </div>
+    <div class="wa-flank" style="--flank-size: 20ch;">
+      <dt>Application for</dt>
+      <dd>Machine Learning Engineer</dd>
+    </div>
+    <div class="wa-flank" style="--flank-size: 20ch;">
+      <dt>Email address</dt>
+      <dd>winter_soldier@example.com</dd>
+    </div>
+    <div class="wa-flank" style="--flank-size: 20ch;">
+      <dt>Salary expectation</dt>
+      <dd>$240,000</dd>
+    </div>
+    <div class="wa-flank wa-align-items-start" style="--flank-size: 20ch;">
+      <dt>About</dt>
+      <dd>
+        <%= yield %>
+      </dd>
+    </div>
+  </dl>
+</div>
+
