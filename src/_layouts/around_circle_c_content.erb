@@ -8,26 +8,30 @@ layout: default
   <wa-divider></wa-divider>
   <dl class="wa-stack wa-gap-2xl">
     <div class="wa-flank" style="--flank-size: 20ch;">
-      <dt>Full name</dt>
-      <dd>Bucky Barnes</dd>
+      <dt>Section</dt>
+      <dd><%= data.section %></dd>
     </div>
     <div class="wa-flank" style="--flank-size: 20ch;">
-      <dt>Application for</dt>
-      <dd>Machine Learning Engineer</dd>
+      <dt>Tags</dt>
+      <dd>
+        <% data.tags.each do |t| %>
+          <wa-badge variant="success" pill> <%= t %> </wa-badge>
+        <% end %>
+      </dd>
     </div>
     <div class="wa-flank" style="--flank-size: 20ch;">
-      <dt>Email address</dt>
-      <dd>winter_soldier@example.com</dd>
-    </div>
-    <div class="wa-flank" style="--flank-size: 20ch;">
-      <dt>Salary expectation</dt>
-      <dd>$240,000</dd>
+      <dt>URL</dt>
+      <dd><a href="<%= data.url %>"><%= data.url %></a></dd>
     </div>
     <div class="wa-flank wa-align-items-start" style="--flank-size: 20ch;">
       <dt>About</dt>
       <dd>
         <%= yield %>
       </dd>
+    </div>
+    <div class="wa-flank" style="--flank-size: 20ch;">
+      <dt>Image</dt>
+      <dd><img src="/<%= data.image %>" style="height: 25%;"></dd>
     </div>
   </dl>
 </div>
