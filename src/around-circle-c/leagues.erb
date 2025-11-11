@@ -1,0 +1,41 @@
+---
+layout: default
+permalink: /around-circle-c/leagues/
+---
+<%
+  section_name = "Leagues"
+  accc = collections.around_circle_c_content.select { |item| item.data.section == section_name }
+%>
+
+<div class="wa-stack wa-gap-2xl">
+  <div class="wa-stack">
+    <a href="/around-circle-c/" class="wa-cluster wa-gap-2xs">
+      <wa-icon name="arrow-left"></wa-icon>
+      <span>Back to Around Circle C</span>
+    </a>
+    <h1 class="wa-heading-2xl"><%= section_name %></h1>
+  </div>
+
+  <div class="wa-grid" style="--min-column-size: 300px;">
+    <% accc.sort_by { |acc| acc.data.title }.each do |acc| %>
+      <a href="<%= acc.relative_url %>">
+        <wa-card with-image style="height: 100%">
+          <img
+            slot="media"
+            src="/<%= acc.data.image %>"
+            alt="<%= acc.data.alt_text %>"
+            style="width: 100%; height: 250px; object-fit: cover;"
+          />
+          <div class="wa-stack wa-gap-xs">
+            <span class="wa-caption-m">
+              <% acc.data.tags.each do |t| %>
+                <wa-badge variant="success" pill> <%= t %> </wa-badge>
+              <% end %>
+            </span>
+            <span class="wa-heading-l"><%= acc.data.title %></span>
+          </div>
+        </wa-card>
+      </a>
+    <% end %>
+  </div>
+</div>
