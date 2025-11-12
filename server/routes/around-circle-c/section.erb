@@ -1,0 +1,8 @@
+---<%
+  section = params[:section]
+  items = collections.around_circle_c_content.select { |item| item.data.section == section }
+%>---
+
+<h2><%= section %></h2>
+
+Display the stuff...
