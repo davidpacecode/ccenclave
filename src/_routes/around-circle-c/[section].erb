@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<%
+  section_name = params[:section]
+  items = collections.around_circle_c_content.select { |item| item.data.section == section_name }
+%>
+
+<div class="wa-stack wa-gap-2xl">
+  <h2 class="wa-heading-xl"><%= section_name %></h2>
+
+  <div class="wa-grid" style="--min-column-size: 300px;">
+    <% items.sort_by { |item| item.data.title }.each do |item| %>
+      <a href="<%= item.relative_url %>">
+        <wa-card with-image style="height: 100%">
+          <img
+            slot="media"
+            src="/<%= item.data.image %>"
+            alt="<%= item.data.alt_text %>"
+            style="width: 100%; height: 250px; object-fit: cover;"
+          />
+          <div class="wa-stack wa-gap-xs">
+            <span class="wa-caption-m">
+              <% item.data.tags.each do |t| %>
+                <wa-badge variant="success" pill> <%= t %> </wa-badge>
+              <% end %>
+            </span>
+            <span class="wa-heading-l"><%= item.data.title %></span>
+            <p><%= item.data.lead_in %></p>
+          </div>
+        </wa-card>
+      </a>
+    <% end %>
+  </div>
+</div>
