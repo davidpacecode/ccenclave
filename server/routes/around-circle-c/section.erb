@@ -1,6 +1,31 @@
----<%
-  section = params[:section]
+<h1><%= data[:section] %></h1>
 
----%>
+<div class="wa-stack wa-gap-2xl">
+  <% if data[:items].any? %>
+    <% data[:items].sort_by { |item| item.data.sort_order || 999 }.each do |item| %>
+      <article class="wa-card">
+        <% if item.data.image %>
+          <img src="/<%= item.data.image %>" alt="<%= item.data.alt_text || item.data.title %>" />
+        <% end %>
 
-Fuck you!
+        <div class="wa-card-content">
+          <h2><%= item.data.title %></h2>
+
+          <% if item.data.lead_in %>
+            <p class="lead"><%= item.data.lead_in %></p>
+          <% end %>
+
+          <%= item.content %>
+
+          <% if item.data.url %>
+            <a href="<%= item.data.url %>" target="_blank" rel="noopener" class="wa-button wa-variant-primary">
+              Visit Website
+            </a>
+          <% end %>
+        </div>
+      </article>
+    <% end %>
+  <% else %>
+    <p>No items found in the <%= data[:section] %> section.</p>
+  <% end %>
+</div>
