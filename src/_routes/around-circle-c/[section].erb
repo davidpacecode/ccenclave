@@ -1,0 +1,10 @@
+---<%
+  section = params[:section]
+  items = site.collections.around_circle_c_content
+%>---
+
+<% items.select { |i| i.data.section == section }.each do |i| %>
+  <%= i.data.title %>
+  <br />
+<% end %>
+
