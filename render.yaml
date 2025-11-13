@@ -38,27 +38,27 @@ services:
 #           name: ccenclave_proddb
 #           property: connectionString
 #       - fromGroup: ccenclave-prod-envs
-#     routes:
-#       - type: rewrite
-#         source: /account/*
-#         destination: https://ccenclave-api.onrender.com/account/*
-#       - type: rewrite
-#         source: /auth/*
-#         destination: https://ccenclave-api.onrender.com/auth/*
-#   - type: web
-#     name: ccenclave-api
-#     plan: standard
-#     runtime: ruby
-#     buildCommand: bundle install && npm install && bin/bridgetown frontend:build
-#     startCommand: bin/bridgetown start
-#     envVars:
-#       - key: BRIDGETOWN_ENV
-#         value: production
-#       - key: DATABASE_URL
-#         fromDatabase:
-#           name: ccenclave_proddb
-#           property: connectionString
-#       - fromGroup: ccenclave-prod-envs
+    routes:
+      - type: rewrite
+        source: /account/*
+        destination: https://ccenclave-api.onrender.com/account/*
+      - type: rewrite
+        source: /auth/*
+        destination: https://ccenclave-api.onrender.com/auth/*
+  - type: web
+    name: ccenclave-api
+    plan: standard
+    runtime: ruby
+    buildCommand: bundle install && npm install && bin/bridgetown frontend:build
+    startCommand: bin/bridgetown start
+    envVars:
+      - key: BRIDGETOWN_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ccenclave_proddb
+          property: connectionString
+      - fromGroup: ccenclave-prod-envs
 # databases:
 #   - name: ccenclave_proddb
 #     plan: starter
