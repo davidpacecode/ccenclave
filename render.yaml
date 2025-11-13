@@ -1,36 +1,16 @@
 services:
   - type: web
     name: ccenclave
-    runtime: static
-    buildCommand: bin/bridgetown deploy
-    staticPublishPath: ./output
-    pullRequestPreviewsEnabled: true
-    headers:
-      - path: /*
-        name: X-Frame-Options
-        value: DENY
-      - path: /*
-        name: X-XSS-Protection
-        value: "1; mode=block"
-      - path: /*
-        name: X-Content-Type-Options
-        value: "nosniff"
-      - path: /*
-        name: Strict-Transport-Security
-        value: "max-age=15552000; includeSubDomains"
-      - path: /*
-        name: Referrer-Policy
-        value: "no-referrer-when-downgrade"
-      - path: /*
-        name: Cache-Control
-        value: "public, max-age=86400, s-max-age=86400"
+    runtime: ruby
+    buildCommand: bundle install && npm install && bin/bridgetown frontend:build
+    startCommand: bin/bridgetown start
     envVars:
       - key: BRIDGETOWN_ENV
         value: production
+      - key: BRIDGETOWN_PORT
+        value: 10000
 ###########
-# Uncomment and modify the following for hybrid deployments, database support, etc.
-#   Use the `routes` rewrite feature to "poke holes" through your static CDN to specific
-#   route handlers in your Roda server application.
+# Uncomment and modify the following for database support, etc.
 ###########
 #
 #       - key: DATABASE_URL
@@ -38,30 +18,6 @@ services:
 #           name: ccenclave_proddb
 #           property: connectionString
 #       - fromGroup: ccenclave-prod-envs
-    routes:
-      - type: rewrite
-        source: /account/*
-        destination: https://ccenclave-api.onrender.com/account/*
-      - type: rewrite
-        source: /auth/*
-        destination: https://ccenclave-api.onrender.com/auth/*
-      - type: rewrite
-        source: /around-circle-c/*
-        destination: https://ccenclave-api.onrender.com/around-circle-c/*
-  - type: web
-    name: ccenclave-api
-    plan: standard
-    runtime: ruby
-    buildCommand: bundle install && npm install && bin/bridgetown frontend:build
-    startCommand: bin/bridgetown start
-    envVars:
-      - key: BRIDGETOWN_ENV
-        value: production
-#       - key: DATABASE_URL
-#         fromDatabase:
-#           name: ccenclave_proddb
-#           property: connectionString
-      - fromGroup: ccenclave-prod-envs
 # databases:
 #   - name: ccenclave_proddb
 #     plan: starter
