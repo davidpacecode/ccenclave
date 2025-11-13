@@ -45,6 +45,9 @@ services:
       - type: rewrite
         source: /auth/*
         destination: https://ccenclave-api.onrender.com/auth/*
+      - type: rewrite
+        source: /around-circle-c/*
+        destination: https://ccenclave-api.onrender.com/around-circle-c/*
   - type: web
     name: ccenclave-api
     plan: standard
