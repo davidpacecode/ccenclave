@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Updates
+title: Enclave Blog
 ---
 
 <wa-divider></wa-divider>
